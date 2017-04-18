@@ -1,0 +1,108 @@
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 1);
+    overflow-x: hidden;
+    opacity: 0;
+    transition: 0.35s;
+    visibility: hidden;
+    transform: scale(0.75);
+    display: table;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: table-cell;
+        vertical-align: middle;
+
+        .nav--items {
+          padding: 0;
+          list-style: none;
+          margin: 0;
+
+          a {
+            margin: 0 auto 15px;
+            width: 300px;
+          }
+        }
+    }
+}
+
+.overlay--logo {
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .nav-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.nav-open-btn {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    z-index: 990;
+
+    &:hover, &:focus {
+      color: #fff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay .overlay-content {
+      text-align: left;
+    }
+
+    .overlay--logo {
+      margin-left: 20px;
+    }
+
+    .overlay .overlay-content .nav--items {
+      margin-left: 20px;
+    }
+
+    .overlay .overlay-content .nav--items a {
+      font-size: 20px;
+      margin-left: 0;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
