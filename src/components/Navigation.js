@@ -23,10 +23,21 @@ class Navigation extends Component {
     }));
   }
 
-
   render() {
     return (
       <div className="nav-container">
+        <div className="navbar--wrapper">
+          <div className="standard_container">
+            <div className="navbar--brand">
+              <img className="navbar--logo" src="/img/logo_white.png" alt="logo"></img>
+              designForum.<i>architects</i>
+            </div>
+            <a className="nav-open-btn" href="#" onClick={this.openNav}>
+              <i className="zmdi zmdi-menu"></i>
+            </a>
+          </div>
+        </div>
+          
         <div className={this.state.navOpen ? 'overlay open' : 'overlay'}>
           <a href="#" className="nav-close-btn" onClick={this.closeNav}><i className="zmdi zmdi-close"></i></a>
           <div className="overlay-content">
@@ -39,9 +50,6 @@ class Navigation extends Component {
             </ul>
           </div>
         </div>
-        <a className="nav-open-btn" href="#" onClick={this.openNav}>
-          <i className="zmdi zmdi-menu"></i>
-        </a>
       </div>
     );
   }

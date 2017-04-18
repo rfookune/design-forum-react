@@ -4,6 +4,11 @@
   left: 0;
   height: 100%;
   width: 100%;
+  color: #fff;
+
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
 
   .owl--nav .owl--btn {
     position: absolute;
@@ -20,7 +25,7 @@
 
     span.zmdi {
       position: relative;
-      top: -3px;
+      top: 3px;
     }
 
     &.owl--prev {
@@ -84,7 +89,12 @@
       margin: 0 auto;
       max-width: 800px;
       .owl--header {
-        font-size: 50px;
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+        line-height: 1.1em;
+        word-spacing: 0.03em;
       }
       .owl--sub-header {
         font-size: 1.1em;
