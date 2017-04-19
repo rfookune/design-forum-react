@@ -3,7 +3,9 @@
   width: 100%;
   display: table;
   background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandportfolio/landing/wp-content/uploads/2015/06/hero_mount.jpg);
-  background-position: center center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .fullscreen--content {
     display: table-cell;
@@ -12,7 +14,9 @@
     .panel--container {
       background: #fff;
       padding: 15px;
-      margin: 65px 0;
+      margin: 65px auto;
+      max-width: 600px;
+      
       .panel--inner {
         border: 1px solid #e2e2e2;
         padding: 60px 30px 60px 30px;

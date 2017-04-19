@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ServicesGrid from '../components/ServicesGrid';
 
 class About extends Component {
   render() {
@@ -38,24 +39,31 @@ class About extends Component {
 	        		</div>
               <div className="section--grid text-center">
                 <div className="row">
-                  <div className="col-sm-4">
-                   <h3>Concept</h3>
-                   <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  <div className="col-sm-4 grid--item">
+                  	<div className="grid--inner">
+                  		<h3>Concept</h3>
+	                   	<p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  	</div>
+	                   
                   </div>
-                  <div className="col-sm-4">
-                   <h3>Design & Review</h3>
-                   <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  <div className="col-sm-4 grid--item">
+                  	<div className="grid--inner">
+                  		<h3>Design & Review</h3>
+                  		<p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  	</div>
                   </div>
-                  <div className="col-sm-4">
-                   <h3>Construction</h3>
-                   <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  <div className="col-sm-4 grid--item">
+                  	<div className="grid--inner">
+                  		<h3>Construction</h3>
+                  		<p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                  	</div>
                   </div>
                 </div>
               </div>
 	        	</div>
 	        </div>
 
-          <div className="section--divider"></div>
+          <ServicesGrid></ServicesGrid>
 
           <div className="standard_container">
 	      		<div className="section--wrapper">
@@ -63,7 +71,7 @@ class About extends Component {
                 <div className="row">
                   <div className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
                     <h2>Meet Our Talented Team</h2>
-                    <p>nteger eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                    <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
                   </div>
                 </div>
 	        			<div className="row">

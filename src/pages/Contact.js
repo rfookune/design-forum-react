@@ -55,27 +55,33 @@ class Contact extends Component {
 	        		</div>
               <div className="section--grid text-center section--contact">
                 <div className="row">
-                  <div className="col-sm-4">
-                    <h3>Hours</h3>
-                    <p>
-                      Mon-Fri: 8:00-17:00 *, <br></br>
-                      Sat-Sun: Closed <br></br>
-                      <span className="small">*hours may be subject to change</span>
-                    </p>
+                  <div className="col-sm-4 grid--item">
+                    <div className="grid--inner">
+                      <h3>Hours</h3>
+                      <p>
+                        Mon-Fri: 8:00-17:00 *, <br></br>
+                        Sat-Sun: Closed <br></br>
+                        <span className="small">*hours may be subject to change</span>
+                      </p>
+                    </div>
                   </div>
-                  <div className="col-sm-4">
-                    <h3>Phone & Email</h3>
-                    <p>
-                      999 999 9999 <br></br>
-                      aarc@intnet.com
-                    </p>
+                  <div className="col-sm-4 grid--item">
+                    <div className="grid--inner">
+                      <h3>Phone & Email</h3>
+                      <p>
+                        999 999 9999 <br></br>
+                        aarc@intnet.com
+                      </p>
+                    </div>
                   </div>
-                  <div className="col-sm-4">
-                    <h3>Location</h3>
-                    <p>
-                      Avenue Des Capucines,<br></br>
-                      Quatre Bornes, Mauritius.
-                    </p>
+                  <div className="col-sm-4 grid--item">
+                    <div className="grid--inner">
+                      <h3>Location</h3>
+                      <p>
+                        Avenue Des Capucines,<br></br>
+                        Quatre Bornes, Mauritius.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
