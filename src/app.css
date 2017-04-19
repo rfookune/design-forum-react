@@ -220,6 +220,29 @@ body,
 html {
   height: 100%; }
 
+.fullscreen--container {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandportfolio/landing/wp-content/uploads/2015/06/hero_mount.jpg);
+  background-position: center center; }
+
+.fullscreen--container .fullscreen--content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.fullscreen--container .fullscreen--content .panel--container {
+  background: #fff;
+  padding: 15px;
+  margin: 65px 0; }
+
+.fullscreen--container .fullscreen--content .panel--container .panel--inner {
+  border: 1px solid #e2e2e2;
+  padding: 60px 30px 60px 30px; }
+
+.fullscreen--container .fullscreen--content .panel--container .panel--title {
+  margin-bottom: 40px; }
+
 body {
   background: #fff;
   color: #777;
@@ -283,6 +306,13 @@ h1 {
 .section--grid p {
   line-height: 1.6;
   font-size: 0.9em; }
+
+.section--grid.section--contact h3 {
+  margin-bottom: 25px; }
+
+.section--grid.section--contact p {
+  line-height: 1.45;
+  font-size: 1em; }
 
 .text--divider .hr {
   position: relative;

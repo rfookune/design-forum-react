@@ -13,28 +13,24 @@
   visibility: hidden;
   transform: scale(0.75);
   display: table; }
-
-.overlay.open {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1); }
-
-.overlay .overlay-content {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  display: table-cell;
-  vertical-align: middle; }
-
-.overlay .overlay-content .nav--items {
-  padding: 0;
-  list-style: none;
-  margin: 0; }
-
-.overlay .overlay-content .nav--items a {
-  margin: 0 auto 15px;
-  width: 300px; }
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+  .overlay .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: table-cell;
+    vertical-align: middle; }
+    .overlay .overlay-content .nav--items {
+      padding: 0;
+      list-style: none;
+      margin: 0; }
+      .overlay .overlay-content .nav--items a {
+        margin: 0 auto 15px;
+        width: 300px; }
 
 .overlay--logo {
   height: 70px;
@@ -85,42 +81,32 @@
   top: 0;
   width: 100%;
   z-index: 999; }
-
-.navbar--wrapper .nav-open-btn {
-  color: #222;
-  float: right;
-  font-size: 28px;
-  line-height: 60px;
-  z-index: 990; }
-
-.navbar--wrapper .nav-open-btn:hover, .navbar--wrapper .nav-open-btn:focus {
-  color: #222; }
-
-.navbar--wrapper .navbar--brand {
-  float: left;
-  font-size: 17px;
-  letter-spacing: 0.05em;
-  line-height: 60px; }
-
-.navbar--wrapper .navbar--brand .navbar--logo {
-  height: 35px;
-  padding-right: 15px; }
-
-.navbar--wrapper .navbar--brand .navbar--logo.logo-light {
-  display: none; }
-
-.navbar--wrapper.transparent {
-  background: transparent;
-  color: #fff; }
-
-.navbar--wrapper.transparent .nav-open-btn {
-  color: #fff; }
-
-.navbar--wrapper.transparent .nav-open-btn:hover, .navbar--wrapper.transparent .nav-open-btn:focus {
-  color: #fff; }
-
-.navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-light {
-  display: inline-block; }
-
-.navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-dark {
-  display: none; }
+  .navbar--wrapper .nav-open-btn {
+    color: #222;
+    float: right;
+    font-size: 28px;
+    line-height: 60px;
+    z-index: 990; }
+    .navbar--wrapper .nav-open-btn:hover, .navbar--wrapper .nav-open-btn:focus {
+      color: #222; }
+  .navbar--wrapper .navbar--brand {
+    float: left;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 60px; }
+    .navbar--wrapper .navbar--brand .navbar--logo {
+      height: 35px;
+      padding-right: 15px; }
+      .navbar--wrapper .navbar--brand .navbar--logo.logo-light {
+        display: none; }
+  .navbar--wrapper.transparent {
+    background: transparent;
+    color: #fff; }
+    .navbar--wrapper.transparent .nav-open-btn {
+      color: #fff; }
+      .navbar--wrapper.transparent .nav-open-btn:hover, .navbar--wrapper.transparent .nav-open-btn:focus {
+        color: #fff; }
+    .navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-light {
+      display: inline-block; }
+    .navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-dark {
+      display: none; }
