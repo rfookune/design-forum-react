@@ -107,6 +107,9 @@
   height: 35px;
   padding-right: 15px; }
 
+.navbar--wrapper .navbar--brand .navbar--logo.logo-light {
+  display: none; }
+
 .navbar--wrapper.transparent {
   background: transparent;
   color: #fff; }
@@ -116,6 +119,12 @@
 
 .navbar--wrapper.transparent .nav-open-btn:hover, .navbar--wrapper.transparent .nav-open-btn:focus {
   color: #fff; }
+
+.navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-light {
+  display: inline-block; }
+
+.navbar--wrapper.transparent .navbar--brand .navbar--logo.logo-dark {
+  display: none; }
 
 .carousel-container {
   position: fixed;
@@ -265,6 +274,16 @@ h1 {
   height: 500px;
   position: relative; }
 
+.section--grid {
+  margin-top: 40px; }
+
+.section--grid h3 {
+  margin-bottom: 15px; }
+
+.section--grid p {
+  line-height: 1.6;
+  font-size: 0.9em; }
+
 .text--divider .hr {
   position: relative;
   max-width: 230px;
@@ -293,6 +312,62 @@ h1 {
   margin: 0;
   padding: 10px 0;
   text-align: center; }
+
+.team--grid {
+  position: relative; }
+
+.team--grid .team--item {
+  position: relative;
+  margin-top: 50px; }
+
+.team--grid .team--item .team--image {
+  position: relative; }
+
+.team--grid .team--item .team--image img {
+  width: 100%; }
+
+.team--grid .team--item .team--overlay {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s; }
+
+.team--grid .team--item .team--overlay .team--overlay-content {
+  position: absolute;
+  top: calc(50% - 20px);
+  width: 100%; }
+
+.team--grid .team--item .team--overlay .team--overlay-content a {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  width: 40px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 22px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8); }
+
+.team--grid .team--item:hover .team--overlay {
+  opacity: 1;
+  top: 0;
+  visibility: visible; }
+
+.team--grid .team--item .team--details {
+  margin-top: 25px;
+  color: #222; }
+
+.team--grid .team--item .team--details .name {
+  font-size: 1.3em;
+  margin-bottom: 5px; }
+
+.team--grid .team--item .team--details .title {
+  font-size: 0.9em; }
 
 .link-test {
   position: fixed;

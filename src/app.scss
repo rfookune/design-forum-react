@@ -68,8 +68,18 @@ h1 {
     position: relative;
 }
 
-.text--divider {
+.section--grid {
+  margin-top: 40px;
+  h3 {
+    margin-bottom: 15px;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 0.9em;
+  }
+}
 
+.text--divider {
 	.hr {
 		position: relative;
     max-width: 230px;
@@ -103,6 +113,69 @@ h1 {
 		padding: 10px 0;
 		text-align: center;
 	}
+}
+
+.team--grid {
+  position: relative;
+  .team--item {
+    position: relative;
+    margin-top: 50px;
+    .team--image {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+
+    .team--overlay {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+
+      .team--overlay-content {
+        position: absolute;
+        top: calc(50% - 20px);
+        width: 100%;
+        a {
+          display: block;
+          height: 40px;
+          margin: 0 auto;
+          width: 40px;
+          color: #fff;
+          line-height: 40px;
+          font-size: 22px;
+          border-radius: 50%;
+          background: rgba(0,0,0,0.8);
+        }
+      }
+    }
+
+    &:hover {
+      .team--overlay {
+        opacity: 1;
+        top: 0;
+        visibility: visible;
+      }
+    }
+
+    .team--details {
+      margin-top: 25px;
+      color: #222;
+      .name {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+      }
+      .title {
+        font-size: 0.9em;
+      }
+    }
+  }
 }
 
 .link-test {

@@ -29,7 +29,8 @@ class Navigation extends Component {
         <div className="navbar--wrapper">
           <div className="standard_container">
             <div className="navbar--brand">
-              <img className="navbar--logo" src="/img/logo_white.png" alt="logo"></img>
+              <img className="navbar--logo logo-dark" src="/img/logo.png" alt="logo"></img>
+              <img className="navbar--logo logo-light" src="/img/logo_white.png" alt="logo"></img>
               designForum.<i>architects</i>
             </div>
             <a className="nav-open-btn" href="#" onClick={this.openNav}>
@@ -37,7 +38,7 @@ class Navigation extends Component {
             </a>
           </div>
         </div>
-          
+
         <div className={this.state.navOpen ? 'overlay open' : 'overlay'}>
           <a href="#" className="nav-close-btn" onClick={this.closeNav}><i className="zmdi zmdi-close"></i></a>
           <div className="overlay-content">

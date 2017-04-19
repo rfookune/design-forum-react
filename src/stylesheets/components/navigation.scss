@@ -124,6 +124,10 @@
     .navbar--logo {
       height: 35px;
       padding-right: 15px;
+
+      &.logo-light {
+        display: none;
+      }
     }
   }
 
@@ -136,6 +140,15 @@
 
       &:hover, &:focus {
         color: #fff;
+      }
+    }
+
+    .navbar--brand .navbar--logo {
+      &.logo-light {
+        display: inline-block;
+      }
+      &.logo-dark {
+        display: none;
       }
     }
   }
