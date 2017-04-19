@@ -3,7 +3,10 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  color: #fff; }
+  .carousel-container h1, .carousel-container h2, .carousel-container h3, .carousel-container h4 {
+    color: #fff; }
   .carousel-container .owl--nav .owl--btn {
     position: absolute;
     top: calc(50% - 23px);
@@ -18,7 +21,7 @@
     transition: all 0.3s ease-in-out; }
     .carousel-container .owl--nav .owl--btn span.zmdi {
       position: relative;
-      top: -3px; }
+      top: 3px; }
     .carousel-container .owl--nav .owl--btn.owl--prev {
       left: -50px; }
     .carousel-container .owl--nav .owl--btn.owl--next {
@@ -60,7 +63,12 @@
       margin: 0 auto;
       max-width: 800px; }
       .owl-carousel div.owl--text-container .owl--text .owl--header {
-        font-size: 50px; }
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+        line-height: 1.1em;
+        word-spacing: 0.03em; }
       .owl-carousel div.owl--text-container .owl--text .owl--sub-header {
         font-size: 1.1em;
         letter-spacing: 0.1em;

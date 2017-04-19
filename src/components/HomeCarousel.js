@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import $ from 'jquery';
 import OwlCarousel from 'react-owl-carousel';
 
@@ -66,13 +65,25 @@ class HomeCarousel extends Component {
         </OwlCarousel>
 
         <div className="owl--nav">
-          <a href="#" className="owl--btn owl--prev" onClick={() => this.refs.homeCarousel.prev()}>
+          
+          <a href="#" 
+            className="owl--btn owl--prev" 
+            onClick={(e) => {
+              e.preventDefault(); 
+              this.refs.homeCarousel.prev()
+            }}>
             <span className="zmdi zmdi-chevron-left"></span>
           </a>
 
-          <a href="#" className="owl--btn owl--next" onClick={() => this.refs.homeCarousel.next()}>
+          <a href="#" 
+            className="owl--btn owl--next" 
+            onClick={(e) => {
+              e.preventDefault(); 
+              this.refs.homeCarousel.next()
+            }}>
             <span className="zmdi zmdi-chevron-right"></span>
           </a>
+          
         </div>
       </div>
     );
