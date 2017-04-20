@@ -13,7 +13,7 @@ class ServicesGrid extends Component {
                 <hr/>
                 <p> We drive commerce through brand culture and an understanding of user behavior. Our eCommerce strategies and digital platforms inspire people to invest in what a brand stands for. </p>
               </div>
-              <a href="#" className="btn-fixed"><span className="zmdi zmdi-arrow-right"></span></a>
+              <a href="#" className="btn-fixed"><span className="icon-absolute zmdi zmdi-long-arrow-tab"></span><span className="zmdi zmdi-long-arrow-right"></span></a>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 service" style={{backgroundImage: "url(/img/img02.jpg)"}}>
@@ -24,7 +24,7 @@ class ServicesGrid extends Component {
                 <hr/>
                 <p> We drive commerce through brand culture and an understanding of user behavior. Our eCommerce strategies and digital platforms inspire people to invest in what a brand stands for. </p>
               </div>
-              <a href="#" className="btn-fixed"><span className="zmdi zmdi-arrow-right"></span></a>
+              <a href="#" className="btn-fixed"><span className="icon-absolute zmdi zmdi-long-arrow-tab"></span><span className="zmdi zmdi-long-arrow-right"></span></a>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 service" style={{backgroundImage: "url(/img/img03.jpg)"}}>
@@ -35,7 +35,7 @@ class ServicesGrid extends Component {
                 <hr/>
                 <p> We drive commerce through brand culture and an understanding of user behavior. Our eCommerce strategies and digital platforms inspire people to invest in what a brand stands for. </p>
               </div>
-              <a href="#" className="btn-fixed"><span className="zmdi zmdi-arrow-right"></span></a>
+              <a href="#" className="btn-fixed"><span className="icon-absolute zmdi zmdi-long-arrow-tab"></span><span className="zmdi zmdi-long-arrow-right"></span></a>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 service" style={{backgroundImage: "url(/img/img04.jpg)"}}>
@@ -46,7 +46,7 @@ class ServicesGrid extends Component {
                 <hr/>
                 <p> We drive commerce through brand culture and an understanding of user behavior. Our eCommerce strategies and digital platforms inspire people to invest in what a brand stands for. </p>
               </div>
-              <a href="#" className="btn-fixed"><span className="zmdi zmdi-arrow-right"></span></a>
+              <a href="#" className="btn-fixed"><span className="icon-absolute zmdi zmdi-long-arrow-tab"></span><span className="zmdi zmdi-long-arrow-right"></span></a>
             </div>
           </div>
         </div>

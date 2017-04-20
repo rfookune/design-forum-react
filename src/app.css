@@ -287,21 +287,38 @@ html {
   text-align: center;
   line-height: 45px;
   border: 1px solid #fff;
-  color: #fff;
-  transition: 0.4s; }
+  transition: background 0.4s;
+  overflow: hidden; }
 
 .services--container .service .service--inner .btn-fixed span.zmdi {
   width: 45px;
   font-size: 20px;
-  line-height: 45px; }
+  line-height: 45px;
+  transition: all 0.4s;
+  color: #fff;
+  position: relative;
+  left: 0; }
+
+.services--container .service .service--inner .btn-fixed span.zmdi.icon-absolute {
+  position: absolute;
+  left: -45px; }
 
 .services--container .service .service--inner .btn-fixed:hover {
-  color: #111;
   background: #fff; }
+
+.services--container .service .service--inner .btn-fixed:hover span.zmdi {
+  color: #111;
+  left: 45px; }
+
+.services--container .service .service--inner .btn-fixed:hover span.zmdi.icon-absolute {
+  left: 0; }
 
 .services--container .service:hover .service--inner .btn-fixed {
   color: #111;
   background: #fff; }
+
+.services--container .service:hover .service--inner .btn-fixed span.zmdi {
+  color: #111; }
 
 .services--container .service:hover .service--inner .service--content {
   top: 0;
@@ -310,7 +327,8 @@ html {
 
 @media screen and (max-width: 767px) {
   .services--container .service {
-    height: auto; }
+    height: auto;
+    margin-bottom: 2px; }
   .services--container .service h1, .services--container .service h2, .services--container .service h3 {
     min-height: auto; }
   .services--container .service .service--inner {

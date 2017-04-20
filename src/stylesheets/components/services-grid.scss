@@ -20,13 +20,13 @@
 
 		h1, h2, h3 {
 			color: #fff;
-		    font-family: 'Roboto', sans-serif;
-		    font-weight: 400;
-		    line-height: 1.2em;
-		    word-spacing: 0.15em;
-		    letter-spacing: 0.08em;
-		    font-size: 1.7em;
-		    min-height: 90px; //change to fit content
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			line-height: 1.2em;
+			word-spacing: 0.15em;
+			letter-spacing: 0.08em;
+			font-size: 1.7em;
+			min-height: 90px; //change to fit content
 		}
 
 		.service--inner {
@@ -45,16 +45,16 @@
 
 			hr {
 				max-width: 50px;
-			    margin-top: 30px;
-			    margin-bottom: 50px;
-			    margin-left: 0;
-			    border-width: 2px;
+				margin-top: 30px;
+				margin-bottom: 50px;
+				margin-left: 0;
+				border-width: 2px;
 			}
 
 			p {
 				line-height: 1.9em;
-			    font-weight: 300;
-			    font-size: 0.95em;
+				font-weight: 300;
+				font-size: 0.95em;
 			}
 
 			.service--content {
@@ -72,17 +72,33 @@
 				text-align: center;
 				line-height: 45px;
 				border: 1px solid #fff;
-				color: #fff;
-				transition: 0.4s;
+				transition: background 0.4s;
+				overflow: hidden;
+
 				span.zmdi {
 					width: 45px;
 					font-size: 20px;
-				    line-height: 45px;
+					line-height: 45px;
+					transition: all 0.4s;
+					color: #fff;
+					position: relative;
+					left: 0;
+
+					&.icon-absolute {
+						position: absolute;
+						left: -45px;
+					}
 				}
 
 				&:hover {
-					color: #111;
 					background: #fff;
+					span.zmdi {
+						color: #111;
+						left: 45px;
+						&.icon-absolute {
+							left: 0;
+						}
+					}
 				}
 			}
 		}
@@ -91,6 +107,9 @@
 			.service--inner .btn-fixed {
 				color: #111;
 				background: #fff;
+				span.zmdi {
+					color: #111;
+				}
 			}
 
 			.service--inner {
@@ -104,22 +123,23 @@
 
 		@media screen and (max-width: 767px) {
 			height: auto;
+			margin-bottom: 2px;
 
 			h1, h2, h3 {
-			    min-height: auto;
+				min-height: auto;
 			}
 			.service--inner {
-			    max-width: 400px;
-			    padding-bottom: 140px;
+				max-width: 400px;
+				padding-bottom: 140px;
 
-			    hr {
-			   	   	margin-top: 20px;
-    				margin-bottom: 30px;
-			    }
+				hr {
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
 
-			    .btn-fixed {
-			    	bottom: 40px;
-			    }
+				.btn-fixed {
+					bottom: 40px;
+				}
 			}
 		}
 	}
