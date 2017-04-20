@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Navigation extends Component {
   constructor(props) {
@@ -16,8 +17,11 @@ class Navigation extends Component {
     }));
   }
 
-  closeNav(event) {
-    event.preventDefault();
+  closeNav(event, preventEvent) {
+    if (preventEvent) {
+      event.preventDefault();
+    }
+    
     this.setState(prevState => ({
       navOpen: false
     }));
@@ -40,14 +44,14 @@ class Navigation extends Component {
         </div>
 
         <div className={this.state.navOpen ? 'overlay open' : 'overlay'}>
-          <a href="#" className="nav-close-btn" onClick={this.closeNav}><i className="zmdi zmdi-close"></i></a>
+          <a href="#" className="nav-close-btn" onClick={(e) => {this.closeNav(e, true)}}><i className="zmdi zmdi-close"></i></a>
           <div className="overlay-content">
             <img className="overlay--logo" src="/img/logo_white.png" alt="logo"></img>
             <ul className="nav--items">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/project">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/" onClick={this.closeNav}>Home</Link></li>
+              <li><Link to="/about" onClick={this.closeNav}>About</Link></li>
+              <li><Link to="/projects" onClick={this.closeNav}>Projects</Link></li>
+              <li><Link to="/contact" onClick={this.closeNav}>Contact</Link></li>
             </ul>
           </div>
         </div>
