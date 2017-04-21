@@ -33,9 +33,29 @@
           list-style: none;
           margin: 0;
 
+          li {
+            &.active a {
+              border: 1px solid #414141;
+            }
+          }
+
           a {
-            margin: 0 auto 15px;
+            margin: 0 auto 20px;
             width: 300px;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            word-spacing: 0.1em;
+            padding: 15px 20px;
+            color: #f1f1f1;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+            position: relative;
+
+            &:hover, &:focus {
+                color: #fff;
+            }
           }
         }
     }
@@ -47,18 +67,9 @@
 }
 
 .overlay a {
-    padding: 5px;
-    text-decoration: none;
-    font-size: 20px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
 
 /* Position the close button (top right corner) */
 .overlay .nav-close-btn {

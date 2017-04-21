@@ -33,27 +33,32 @@
   list-style: none;
   margin: 0; }
 
+.overlay .overlay-content .nav--items li.active a {
+  border: 1px solid #414141; }
+
 .overlay .overlay-content .nav--items a {
-  margin: 0 auto 15px;
-  width: 300px; }
+  margin: 0 auto 20px;
+  width: 300px;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  word-spacing: 0.1em;
+  padding: 15px 20px;
+  color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  position: relative; }
+
+.overlay .overlay-content .nav--items a:hover, .overlay .overlay-content .nav--items a:focus {
+  color: #fff; }
 
 .overlay--logo {
   height: 70px;
   margin-bottom: 40px; }
 
 .overlay a {
-  padding: 5px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */ }
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1; }
+  color: #818181; }
 
 /* Position the close button (top right corner) */
 .overlay .nav-close-btn {
