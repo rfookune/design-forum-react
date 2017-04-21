@@ -70,7 +70,9 @@ class About extends Component {
 	        		<div className="team--grid">
                 <div className="row">
                   <div className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-                    <h2>Meet Our Talented Team</h2>
+                    <div className="section--title">
+                      <h2>Meet Our Talented Team</h2>
+                    </div>
                     <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
                   </div>
                 </div>

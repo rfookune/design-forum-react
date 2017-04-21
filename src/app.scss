@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:100,300,300i,400,400i,500,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Lato:100,300,300i,400,400i,500,700');
 
 @import "./stylesheets/components/navigation.scss";
 @import "./stylesheets/components/fullscreen-carousel.scss";
@@ -9,10 +9,11 @@
 body {
 	background: #fff;
 	color: #777;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	letter-spacing: 0.01em;
 	word-spacing: 0.07em;
 	line-height: 1.7em;
+  font-size: 15px;
 }
 
 h1, h2, h3 {
@@ -30,6 +31,10 @@ h1 {
 	line-height: 1.1em;
 	margin-bottom: 30px;
 	word-spacing: 0.03em;
+}
+
+.section--title h2 {
+  margin-bottom: 30px;
 }
 
 .section--tagline {
