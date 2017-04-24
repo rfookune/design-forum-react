@@ -10,7 +10,7 @@ class Navigation extends Component {
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
 
-    if(this.props.path == "/home" || this.props.path == "/projects") {
+    if(this.props.path === "/home") {
       this.navStyle = 'transparent';
     } else {
       this.navStyle = '';
@@ -28,7 +28,7 @@ class Navigation extends Component {
     if (preventEvent) {
       event.preventDefault();
     }
-    
+
     this.setState(prevState => ({
       navOpen: false
     }));
@@ -55,17 +55,19 @@ class Navigation extends Component {
           <a href="#" className="nav-close-btn" onClick={(e) => {this.closeNav(e, true)}}><i className="zmdi zmdi-close"></i></a>
           <div className="overlay-content">
             <ul className="nav--items">
-<<<<<<< HEAD
+
+              {/*
+                <li><Link to="/" onClick={this.closeNav}>Home</Link></li>
+                <li><Link to="/about" onClick={this.closeNav}>About</Link></li>
+                <li><Link to="/projects" onClick={this.closeNav}>Projects</Link></li>
+                <li><Link to="/contact" onClick={this.closeNav}>Contact</Link></li>
+              */}
+
               <li><a href="/home">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="/projects">Projects</a></li>
               <li><a href="/contact">Contact</a></li>
-=======
-              <li><Link to="/" onClick={this.closeNav}>Home</Link></li>
-              <li><Link to="/about" onClick={this.closeNav}>About</Link></li>
-              <li><Link to="/projects" onClick={this.closeNav}>Projects</Link></li>
-              <li><Link to="/contact" onClick={this.closeNav}>Contact</Link></li>
->>>>>>> 1d9d3955d236a4a1bf17e3868be2935bfc2f086f
+
             </ul>
           </div>
         </div>

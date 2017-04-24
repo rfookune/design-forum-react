@@ -44,7 +44,7 @@ class About extends Component {
                   		<h3>Concept</h3>
 	                   	<p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
                   	</div>
-	                   
+
                   </div>
                   <div className="col-sm-4 grid--item">
                   	<div className="grid--inner">

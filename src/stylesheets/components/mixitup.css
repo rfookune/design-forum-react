@@ -1,0 +1,95 @@
+.filters {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  text-align: right; }
+  .filters li {
+    display: inline-block;
+    min-width: 100px;
+    padding: 0 15px;
+    text-align: center; }
+    .filters li span {
+      cursor: pointer;
+      padding: 6px 2px;
+      position: relative; }
+      .filters li span:before {
+        content: '';
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        display: inline;
+        background: #222; }
+      .filters li span:hover {
+        opacity: 0.8;
+        border-color: #222; }
+        .filters li span:hover:before {
+          width: 100%; }
+  @media screen and (max-width: 750px) {
+    .filters {
+      text-align: center; } }
+
+.mix .mix--container {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .mix .mix--container .mix--picture {
+    height: 300px;
+    background-image: url("/img/img01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer; }
+    @media screen and (min-width: 1200px) {
+      .mix .mix--container .mix--picture {
+        height: 400px; } }
+    @media screen and (max-width: 991px) {
+      .mix .mix--container .mix--picture {
+        height: 500px; } }
+    @media screen and (max-width: 800px) {
+      .mix .mix--container .mix--picture {
+        height: 400px; } }
+    @media screen and (max-width: 700px) {
+      .mix .mix--container .mix--picture {
+        height: 350px; } }
+    @media screen and (max-width: 600px) {
+      .mix .mix--container .mix--picture {
+        height: 300px; } }
+    @media screen and (max-width: 500px) {
+      .mix .mix--container .mix--picture {
+        height: 250px; } }
+    .mix .mix--container .mix--picture .mix--overlay {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: table;
+      top: 30px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s; }
+      .mix .mix--container .mix--picture .mix--overlay .overlay--icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+        .mix .mix--container .mix--picture .mix--overlay .overlay--icon i {
+          color: #f2f2f2;
+          height: 50px;
+          width: 50px;
+          line-height: 50px;
+          border-radius: 50%;
+          font-size: 25px;
+          background: rgba(0, 0, 0, 0.7); }
+    .mix .mix--container .mix--picture:hover .mix--overlay {
+      visibility: visible;
+      opacity: 1;
+      top: 0; }
+  .mix .mix--container .mix--content .mix--title {
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 0 5px;
+    margin: 0; }
