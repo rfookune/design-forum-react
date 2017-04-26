@@ -10,7 +10,7 @@ class Navigation extends Component {
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
 
-    if(this.props.path === "/home") {
+    if(this.props.path === "/") {
       this.navStyle = 'transparent';
     } else {
       this.navStyle = '';
@@ -35,7 +35,6 @@ class Navigation extends Component {
   }
 
   render() {
-    console.log(this.navStyle);
     return (
       <div className="nav-container">
         <div className={this.navStyle+' navbar--wrapper'}>
@@ -63,7 +62,7 @@ class Navigation extends Component {
                 <li><Link to="/contact" onClick={this.closeNav}>Contact</Link></li>
               */}
 
-              <li><a href="/home">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/projects">Projects</a></li>
               <li><a href="/contact">Contact</a></li>

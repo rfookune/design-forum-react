@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ComingSoon from '../components/ComingSoon';
 import ProjectMixItUp from '../components/ProjectMixItUp';
 
 class Projects extends Component {
