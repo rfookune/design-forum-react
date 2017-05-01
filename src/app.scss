@@ -4,6 +4,7 @@
 @import "./stylesheets/components/fullscreen-carousel.scss";
 @import "./stylesheets/components/services-grid.scss";
 @import "./stylesheets/components/mixitup.scss";
+@import "./stylesheets/components/lightbox.scss";
 @import "./stylesheets/components/coming-soon.scss";
 
 
@@ -112,6 +113,15 @@ h1 {
   }
 }
 
+.section--border {
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.image_container img {
+	width: 100%;
+}
+
 .text--divider {
 	.hr {
 		position: relative;
@@ -216,4 +226,12 @@ h1 {
   bottom: 0;
   left: 0;
   z-index: 9999;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
 }

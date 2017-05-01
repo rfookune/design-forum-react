@@ -1,0 +1,8 @@
+.lightbox--thumbnail {
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 20px; }
